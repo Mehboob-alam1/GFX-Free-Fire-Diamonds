@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "574561128569",
+    "project_id": "gfxapp-3a61a",
+    "storage_bucket": "gfxapp-3a61a.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:574561128569:android:517471271488e3af3104a8",
+        "android_client_info": {
+          "package_name": "com.elevenappstudio.getdailydiamondguide"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDIr-b-54VQzmw7YsF3utw0UsJdcGnqUx4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

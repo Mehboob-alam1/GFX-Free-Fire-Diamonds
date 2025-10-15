@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/frag_home"
+        android:enabled="true"
+        android:icon="@drawable/house"
+        android:title="Home"
+        app:cnb_backgroundColor="@color/back_accent"
+        app:cnb_iconColor="@color/fore_accent"
+        app:cnb_iconTintMode="src_in"
+        app:cnb_textColor="@color/font" />
+    <item
+        android:id="@+id/frag_analytics"
+        android:icon="@drawable/voltage"
+        android:title="Analytics"
+        app:cnb_backgroundColor="@color/back_accent"
+        app:cnb_iconColor="@color/fore_accent"
+        app:cnb_iconTintMode="src_in"
+        app:cnb_textColor="@color/font" />
+    <item
+        android:id="@+id/frag_settings"
+        android:icon="@drawable/settings"
+        android:title="Settings"
+        app:cnb_backgroundColor="@color/back_accent"
+        app:cnb_iconColor="@color/fore_accent"
+        app:cnb_iconTintMode="src_in"
+        app:cnb_textColor="@color/font" />
+</menu>

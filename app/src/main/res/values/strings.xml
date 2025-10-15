@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">10X Get Daily Diamond Guide</string>
+
+    <string name="applovin_sdk_key">applovin_sdk_key</string>
+
+    <string name="first_check">I understand that sharing of inappropriate content will not be tolerated.</string>
+    <string name="second_check">I confirm that Im 18 years old or above.</string>
+    <string name="clickforprivacy">"By Clicking 'Get Started'. You are agree to above Terms of Use and Privacy Policy. "</string>
+
+    <string name="dest_title">destination title</string>
+    <string name="ellipsis">…</string>
+    <string name="shizuku_permission_grant">To provide you with enhanced features and deeper access to your device’s capabilities,\nwe require permission to use Shizuku,\n\nYou can revoke this permission at any time through the apps settings.</string>
+
+</resources>

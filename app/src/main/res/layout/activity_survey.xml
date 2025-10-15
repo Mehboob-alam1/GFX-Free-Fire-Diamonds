@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorlight"
+    android:padding="20dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/submitButton">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginTop="40dp"
+                android:src="@drawable/logo" />
+
+            <TextView
+                android:id="@+id/surveyTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:gravity="center"
+                android:text="Survey Question"
+                android:textColor="@color/black"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/surveyQuestion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/regular"
+                android:gravity="center"
+                android:text="What is your favorite feature?"
+                android:textColor="@color/black1"
+                android:textSize="16sp" />
+
+            <RadioGroup
+                android:id="@+id/surveyOptions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/option1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/game_card_background"
+                    android:fontFamily="@font/regular"
+                    android:padding="20dp"
+                    android:text="Option 1"
+                    android:textColor="@color/font"
+                    android:textSize="15sp" />
+
+                <RadioButton
+                    android:id="@+id/option2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/game_card_background"
+                    android:fontFamily="@font/regular"
+                    android:padding="20dp"
+                    android:text="Option 2"
+                    android:textColor="@color/font"
+                    android:textSize="15sp" />
+
+                <RadioButton
+                    android:id="@+id/option3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/game_card_background"
+                    android:fontFamily="@font/regular"
+                    android:padding="20dp"
+                    android:text="Option 3"
+                    android:textColor="@color/font"
+                    android:textSize="15sp" />
+
+                <RadioButton
+                    android:id="@+id/option4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/game_card_background"
+                    android:fontFamily="@font/regular"
+                    android:padding="20dp"
+                    android:text="Option 4"
+                    android:textColor="@color/font"
+                    android:textSize="15sp" />
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/submitButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:padding="15dp"
+        android:text="Submit"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        app:cornerRadius="15dp" />
+
+</RelativeLayout>
+

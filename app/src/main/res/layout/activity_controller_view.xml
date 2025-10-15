@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:aapt="http://schemas.android.com/aapt"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_above="@+id/btm1"
+            android:id="@+id/main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/materialCardView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/top_card_background"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constraintLayout2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/constraintLayout"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView10">
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:text="Ram Usage"
+                        android:textColor="@color/font"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ProgressBar
+                        android:id="@+id/ramUsageProgressBar"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="0dp"
+                        android:layout_height="45dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="20dp"
+                        android:progress="20"
+                        android:progressDrawable="@drawable/progress_bar_custom"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="@+id/textView2"
+                        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cardView"
+                        android:layout_width="12dp"
+                        android:layout_height="12dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="30dp"
+                        android:backgroundTint="@color/fore_accent"
+                        app:cardCornerRadius="3dp"
+                        app:cardElevation="0dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="@+id/ramUsageProgressBar"
+                        app:layout_constraintTop_toBottomOf="@+id/ramUsageProgressBar" />
+
+                    <TextView
+                        android:id="@+id/ramUsed_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="20dp"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:text="9.28 GB"
+                        android:textColor="@color/font"
+                        android:textSize="10sp"
+                        app:layout_constraintBottom_toBottomOf="@+id/cardView"
+                        app:layout_constraintEnd_toStartOf="@+id/cardView2"
+                        app:layout_constraintHorizontal_bias="0"
+                        app:layout_constraintStart_toEndOf="@+id/cardView"
+                        app:layout_constraintTop_toTopOf="@+id/cardView" />
+
+                    <TextView
+                        android:id="@+id/totalRam_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:text="9.28 GB"
+                        android:textColor="@color/font"
+                        android:textSize="10sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="@+id/ramUsageProgressBar"
+                        app:layout_constraintTop_toTopOf="@+id/ramUsed_txt" />
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cardView2"
+                        android:layout_width="12dp"
+                        android:layout_height="12dp"
+                        android:layout_marginEnd="5dp"
+                        android:backgroundTint="@color/back_accent"
+                        app:cardElevation="0dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/totalRam_txt"
+                        app:layout_constraintTop_toTopOf="@+id/totalRam_txt" />
+
+                    <TextView
+                        android:id="@+id/ramUsagePercent_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="4dp"
+                        android:fontFamily="@font/poppins_bold"
+                        android:text="20%"
+                        android:textColor="@color/inside_font"
+                        android:textSize="18sp"
+                        app:layout_constraintBottom_toBottomOf="@+id/ramUsageProgressBar"
+                        app:layout_constraintStart_toStartOf="@+id/ramUsageProgressBar"
+                        app:layout_constraintTop_toTopOf="@+id/ramUsageProgressBar" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constraintLayout"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/constraintLayout2"
+                    app:layout_constraintTop_toTopOf="@+id/constraintLayout2">
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:text="Storage Usage"
+                        android:textColor="@color/font"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ProgressBar
+                        android:id="@+id/storageUsageProgressBar"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="0dp"
+                        android:layout_height="45dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="20dp"
+                        android:progress="42"
+                        android:progressDrawable="@drawable/progress_bar_custom"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0"
+                        app:layout_constraintStart_toStartOf="@+id/textView3"
+                        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cardView3"
+                        android:layout_width="12dp"
+                        android:layout_height="12dp"
+                        android:layout_marginTop="30dp"
+                        android:backgroundTint="@color/fore_accent"
+                        app:cardCornerRadius="3dp"
+                        app:cardElevation="0dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="@+id/storageUsageProgressBar"
+                        app:layout_constraintTop_toBottomOf="@+id/storageUsageProgressBar" />
+
+                    <TextView
+                        android:id="@+id/storageUsed_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:text="9.28 GB"
+                        android:textColor="@color/font"
+                        android:textSize="10sp"
+                        app:layout_constraintBottom_toBottomOf="@+id/cardView3"
+                        app:layout_constraintStart_toEndOf="@+id/cardView3"
+                        app:layout_constraintTop_toTopOf="@+id/cardView3" />
+
+                    <TextView
+                        android:id="@+id/totalStorage_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:text="9.28 GB"
+                        android:textColor="@color/font"
+                        android:textSize="10sp"
+                        app:layout_constraintBottom_toBottomOf="@+id/storageUsed_txt"
+                        app:layout_constraintEnd_toEndOf="@+id/storageUsageProgressBar"
+                        app:layout_constraintTop_toTopOf="@+id/storageUsed_txt" />
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="12dp"
+                        android:layout_height="12dp"
+                        android:layout_marginEnd="5dp"
+                        android:backgroundTint="@color/back_accent"
+                        app:cardCornerRadius="3dp"
+                        app:cardElevation="0dp"
+                        app:layout_constraintBottom_toBottomOf="@+id/totalStorage_txt"
+                        app:layout_constraintEnd_toStartOf="@+id/totalStorage_txt"
+                        app:layout_constraintTop_toTopOf="@+id/totalStorage_txt" />
+
+                    <TextView
+                        android:id="@+id/storageUsagePercent_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="4dp"
+                        android:fontFamily="@font/poppins_bold"
+                        android:text="42%"
+                        android:textColor="@color/inside_font"
+                        android:textSize="18sp"
+                        app:layout_constraintBottom_toBottomOf="@+id/storageUsageProgressBar"
+                        app:layout_constraintStart_toStartOf="@+id/storageUsageProgressBar"
+                        app:layout_constraintTop_toTopOf="@+id/storageUsageProgressBar" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="50dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="Game Launcher"
+                    android:textColor="@color/font"
+                    android:textSize="40sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.viewpager2.widget.ViewPager2
+                android:id="@+id/viewPager"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/materialCardView" />
+
+            <com.ismaeldivita.chipnavigation.ChipNavigationBar
+                android:id="@+id/bottomNavigationView"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="bottom"
+                android:background="@color/bottom_nav_background"
+                android:fadingEdge="horizontal"
+                app:cnb_addBottomInset="true"
+                app:cnb_animationDuration="175"
+                app:cnb_iconSize="26dp"
+                app:cnb_menuResource="@menu/bottom_nav_menu"
+                app:cnb_radius="16dp"
+                app:cnb_textAppearance="@style/bottomNavText"
+                app:cnb_unselectedColor="@color/inactive_accent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <RelativeLayout
+            android:id="@+id/btm1"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@color/white"
+            android:gravity="center"
+            android:layout_alignParentBottom="true">
+
+            <include
+                android:id="@+id/reguler_banner_ad"
+                layout="@layout/ads_layout_banner"
+                android:visibility="visible" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</layout>

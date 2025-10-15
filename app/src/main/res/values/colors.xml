@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#33b87f</color>
+    <color name="colorPrimaryDark">#33b87f</color>
+    <color name="colorAccent">#33b87f</color>
+
+    <color name="primarymain">#33b87f</color>
+    <color name="colorlight">#FFFFFF</color>
+
+    <color name="colorlightdark">#FFFFFF</color>
+
+    <color name="adstext">#000000</color>
+
+
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="blackads">#1a1a1a</color>
+    <color name="black1">#4c4c4c</color>
+
+
+    <color name="back_accent">#e5f6ee</color>
+    <color name="background">#f3f4f6</color>
+    <color name="bottom_nav_background">#ffffff</color>
+    <color name="card_booster">#3b4249</color>
+    <color name="colored_pill_font">#fff</color>
+    <color name="font">#4d5358</color>
+    <color name="fore_accent">#33b87f</color>
+    <color name="fore_background">#f3f4f6</color>
+    <color name="game_card_background">#ffffff</color>
+    <color name="hint_color">#909090</color>
+    <color name="inactive_accent">#cbcccb</color>
+    <color name="inside_font">#ffffff</color>
+    <color name="statusBarBackground">#ffffff</color>
+    <color name="sub_font">#424242</color>
+    <color name="shimmer_back_accent">#d0d0d0</color>
+    <color name="shimmer_fore_accent">#d5d5d5</color>
+    
+    <!-- Diamond App Colors -->
+    <color name="bg_color">#0C0517</color>
+    <color name="onSurface">#777777</color>
+    <color name="surface">#ffffff</color>
+    <color name="onBackground">#050505</color>
+
+</resources>

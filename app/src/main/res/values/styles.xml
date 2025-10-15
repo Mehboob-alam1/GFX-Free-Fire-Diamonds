@@ -1,0 +1,98 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/white</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="DialogTheme" parent="@android:style/Theme.Translucent.NoTitleBar" />
+
+    <!--<style name="AdAttributionadmob">
+        <item name="android:textSize">12.0dip</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:gravity">center_horizontal|clip_horizontal</item>
+        <item name="android:layout_gravity">left|center_horizontal</item>
+        <item name="android:background">@drawable/ad_btn_install</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:text">AD</item>
+        <item name="android:paddingLeft">3dp</item>
+        <item name="android:paddingRight">3dp</item>
+        <item name="android:layout_margin">3dp</item>
+        <item name="elevation">2dp</item>
+    </style>-->
+
+    <style name="ThemeGameLauncher" parent="AppTheme">
+        <item name="android:windowBackground">@color/background</item>
+        <item name="android:windowDisablePreview">true</item>
+        <item name="statusBarBackground">@color/statusBarBackground</item>
+    </style>
+
+    <style name="BottomSheetTheme">
+        <item name="bottomSheetStyle">@style/bottomSheetDialog</item>
+    </style>
+
+    <style name="bottomSheetDialog">
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <style name="BottomSheetDialogTheme" parent="Theme.MaterialComponents.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/FullScreenBottomSheetStyle</item>
+    </style>
+
+    <style name="FullScreenBottomSheetStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="bottomNavText">
+        <item name="android:textColor">@color/font</item>
+        <item name="android:textAlignment">center</item>
+        <item name="fontFamily">@font/poppins_semibold</item>
+    </style>
+
+    <style name="spinnerDropDownItemStyle">
+    </style>
+
+    <style name="spinnerItemStyle">
+    </style>
+
+    <style name="ThemeApp">
+        <item name="colorControlActivated">@color/fore_accent</item>
+    </style>
+
+    <!-- Diamond App Text Styles -->
+    <style name="TextAppearance.MyApp.BodyMed" parent="@style/TextAppearance.MaterialComponents.Body2">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="fontFamily">@font/regular</item>
+    </style>
+
+    <style name="TextAppearance.MyApp.OverlineMed" parent="@style/TextAppearance.MaterialComponents.Overline">
+        <item name="android:textSize">10sp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="fontFamily">@font/regular</item>
+    </style>
+
+    <style name="TextAppearance.MyApp.Subtitle2" parent="@style/TextAppearance.MaterialComponents.Subtitle2">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="fontFamily">@font/regular</item>
+    </style>
+
+    <style name="TextAppearance.MyApp.CaptionMed" parent="@style/TextAppearance.MaterialComponents.Caption">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="fontFamily">@font/regular</item>
+    </style>
+
+    <style name="TextAppearance.MyApp.Subtitle1" parent="@style/TextAppearance.MaterialComponents.Subtitle1">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="fontFamily">@font/regular</item>
+    </style>
+
+</resources>

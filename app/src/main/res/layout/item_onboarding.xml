@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorlight"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <!-- Onboarding Image -->
+        <ImageView
+            android:id="@+id/onboardingImage"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_marginTop="40dp"
+            android:src="@drawable/logo" />
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/onboardingTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:gravity="center"
+            android:text="Welcome to GFX Launcher"
+            android:textColor="@color/black"
+            android:textSize="24sp" />
+
+        <!-- Subtitle -->
+        <TextView
+            android:id="@+id/onboardingSubtitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/regular"
+            android:gravity="center"
+            android:text="Boost your gaming experience with our powerful features"
+            android:textColor="@color/black1"
+            android:textSize="16sp" />
+
+        <!-- Next Button -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/nextButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:padding="15dp"
+            android:text="Next"
+            android:textAllCaps="false"
+            android:textSize="16sp"
+            app:cornerRadius="15dp" />
+
+    </LinearLayout>
+
+</RelativeLayout>
+
+
